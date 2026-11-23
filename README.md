@@ -154,7 +154,7 @@ To start a run, click **Save Version → Save & Run All (Commit) → Save**. The
 
 To resume an interrupted run:
 
-1. Add the previous version's output as an input (**Add Input → Your Work → Notebooks → Previous version's Notebook**). Its files then appear under `/kaggle/input`.
+1. Add the previous version's output as an input (**Add Input → Your Work → Notebooks** then add your previous version's notebook). Its files then appear under `/kaggle/input`.
 2. Run **Save & Run All** again. The launcher finds the saved `state.pt` and continues from it.
 3. Check that the log shows `continuing from …` and `resumed at step …`.
 
