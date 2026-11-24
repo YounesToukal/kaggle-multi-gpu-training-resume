@@ -162,12 +162,12 @@ If you have less than 12 GPU hours left in your weekly quota, lower `BUDGET_H` i
 
 ## 3. The Notebook Template
 
-The template has two files, one per notebook cell, and a notebook that combines them:
+**`kaggle_template.ipynb` is all you need on Kaggle.** Its first cell is the training script, with the two-GPU and resume code, and its second cell starts it on both GPUs. The same code is also kept as two plain files, so it is easy to read on GitHub and the tests can run it:
 
 ```
-├── train.py                # first cell: the training script
-├── launch.py               # second cell: the launcher
-├── kaggle_template.ipynb   # both cells, ready to run on Kaggle
+├── kaggle_template.ipynb   # the notebook to run on Kaggle
+├── train.py                # its first cell: the training script
+├── launch.py               # its second cell: the launcher
 └── tests/test_resume.py    # resume tests
 ```
 
